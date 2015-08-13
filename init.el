@@ -38,15 +38,12 @@
 ;; =============================================================
 ;; Major modes
 
-;; Emacs LISP
-;;(diminish 'emacs-lisp-mode "EmacsL")
-
 ;; Clojure
 (maybe-install-and-require 'clojure-mode)
 (setq auto-mode-alist (cons '("\\.cljs$" . clojure-mode) auto-mode-alist))
 
 (maybe-install-and-require 'inf-clojure)
-(diminish 'inf-clojure-minor-mode " ηζ")
+(diminish 'inf-clojure-minor-mode " λ")
 (add-hook 'inf-clojure-minor-mode-hook
           (lambda () (setq completion-at-point-functions nil)))
 (add-hook 'clojure-mode-hook 'inf-clojure-minor-mode)
@@ -164,9 +161,9 @@
 
 ;; paredit
 (maybe-install-and-require 'paredit)
-(diminish 'paredit-mode "[]")
+(diminish 'paredit-mode " {}")
 (add-hook 'lisp-mode-hook 'paredit-mode)
-;(add-hook 'emacs-lisp-mode-hook 'paredit-mode)
+(add-hook 'emacs-lisp-mode-hook 'paredit-mode)
 (add-hook 'scheme-mode-hook 'paredit-mode)
 (add-hook 'cider-repl-mode-hook 'paredit-mode)
 (add-hook 'clojure-mode-hook 'paredit-mode)
@@ -297,7 +294,7 @@
 
 ;; flyspell
 (require 'flyspell)
-(diminish 'flyspell-mode "fly")
+(diminish 'flyspell-mode "fly ")
 
 ;; linum
 (if window-system
@@ -378,6 +375,163 @@
                                         (buf-move-left) (golden-ratio)))
 
 ;; =============================================================
+;; clean mode-line
+(defvar mode-line-cleaner-alist
+  `((auto-complete-mode       . " α")
+    (yas-minor-mode           . " γ")
+    (org-agenda-mode          . "øα")
+    (org-mode                 . "ø")
+    (org-agenda-day-view      . "")
+    (undo-tree-mode           . " τ")
+    (paredit-mode             . " {}")
+    (eldoc-mode               . " ξd")
+    (abbrev-mode              . "")
+    (nrepl-mode               . " ηζ")
+    (nrepl-interaction-mode   . " ηζ")
+    (cider-mode               . " ηζ")
+    (cider-interaction        . " ηζ")
+    ;; Major modes
+    (clojure-mode             . "λ")
+    ;(yas-global-mode          . " γ")
+    (hi-lock-mode             . "")
+    (python-mode              . "π")
+    (emacs-lisp-mode          . "ε")
+    (nxhtml-mode              . "nx")
+    (markdown-mode            . "md")
+    (haskell-mode             . "ha")
+
+    )
+  "Alist for `clean-mode-line'.
+
+When you add a new element to the alist, keep in mind that you
+must pass the correct minor/major mode symbol and a string you
+want to use in the modeline *in lieu of* the original.")
+
+(defun clean-mode-line ()
+  (interactive)
+  (loop for cleaner in mode-line-cleaner-alist
+        do (let* ((mode (car cleaner))
+                 (mode-str (cdr cleaner))
+                 (old-mode-str (cdr (assq mode minor-mode-alist))))
+             (when old-mode-str
+                 (setcar old-mode-str mode-str))
+               ;; major mode
+             (when (eq mode major-mode)
+               (setq mode-name mode-str)))))
+
+
+(add-hook 'after-change-major-mode-hook 'clean-mode-line)
+
+;;; Greek letters - C-u C-\ greek ;; C-\ to revert to default
+;;; ς
+;;; ε
+;;; ρ τ υ θ ι ο π α σ δ φ γ η ξ κ λ ζ χ ψ ω β ν μ
+
+;; =============================================================
+;; Org-Mode
+(require 'org)
+;;
+;; Standard key bindings
+(global-set-key "\C-cl" 'org-store-link)
+(global-set-key "\C-ca" 'org-agenda)
+(global-set-key "\C-cb" 'org-iswitchb)
+;; org files
+(add-to-list 'load-path (expand-file-name "~/Dropbox/GTD"))
+(add-to-list 'auto-mode-alist '("\\.\\(org\\|org_archive\\|txt\\)"))
+
+;; setup for org-capture
+(setq org-directory "~/Dropbox/GTD")
+(setq org-default-notes-file "~/Dropbox/GTD/inbox.org")
+
+;; sets the TAG list
+(setq org-tag-alist '((:startgroup . nil)
+                      ("@maision" . ?m)
+                      ("@bureau" . ?b)
+                      ("@voiture" . ?v)
+                      ("@ferme"   . ?f)
+                      (:endgroup . nil)
+                      ("TÉLÉPHONE" . ?t)
+                      ("RENDEZ_VOUS" . ?r)
+                      (:startgroup . nil)
+                      ("#ATTENTE" . ?w)
+                      ("#SOUTE" . ?h)
+                      ("#ANNULÉ" . ?a)
+                      ("#PROXIMO" . ?p)
+                      ("#UN_JOUR" . ?j)
+                      (:endgroup . nil)
+                      ("en ligne" . ?e)))
+
+(setq org-capture-templates
+      '(("t" "todo" entry (file+headline "~/Dropbox/GTD/inbox.org" "Boîte de réception")
+         "* TODO %?\n%U\n%a\n" :clock-in t :clock-resume t)
+        ("r" "répondre" entry (file+headline "~/Dropbox/GTD/inbox.org" "Répondre")
+         "* EN_COURS Respond to %:from on %:subject\nSCHEDULED: %t\n%U\n%a\n" :clock-in t :clock-resume t :immediate-finish t)
+        ("n" "commentaire" entry (file+headline "~/Dropbox/GTD/inbox.org" "Commentaire")
+                        "* %? :NOTE:\n%U\n%a\n" :clock-in t :clock-resume t)
+        ("j" "journal" entry (file+datetree "~/Dropbox/GTD/journal.org")
+         "* %?\n%U\n" :clock-in t :clock-resume t)
+        ("m" "Meeting" entry (file+headline "~/Dropbox/GTD/inbox.org" "Interruptions")
+         "* RENDEZ_VOUS avec %? :MEETING:\n%U" :clock-in t :clock-resume t)
+        ("p" "appel téléphonique" entry (file+headline "~/Dropbox/GTD/inbox.org" "Interruptions")
+         "* TÉLÉPHONE %? :PHONE:\n%U" :clock-in t :clock-resume t)
+        ("h" "Habitude" entry (file "~/Dropbox/GTD/inbox.org")
+                        "* NEXT %?\n%U\n%a\nSCHEDULED: %(format-time-string \"<%Y-%m-%d %a .+1d/3d>\")\n:PROPERTIES:\n:STYLE: habit\n:REPEAT_TO_STATE: EN_COURS\n:END:\n")
+        ))
+
+;; DO Not dim blocked tasks
+(setq org-agenda-dim-blocked-tasks nil)
+;; Compact the block agenda view
+(setq org-agenda-compact-blocks t)
+;; Set the default agenda-view to 1 day
+(setq org-agenda-span 1)
+(setq org-agenda-custom-commands
+      '( (" " "Ordre du Jour"
+         ((agenda "" nil)
+          (alltodo ""
+                   ((org-agenda-overriding-header "Tâches à la Représenter")
+                    (org-agenda-files '("~/Dropbox/GTD/inbox.org"))
+                    ))
+          (tags-todo "-ANNULÉ/!-SOUTE-ATTENTE-GOAL"
+                     ((org-agenda-overriding-header "Projets Bloqués")
+                      ))
+          (tags-todo "-ATTENTE-ANNULÉ/!EN_COURS"
+                     ((org-agenda-overriding-header "Tâches à Venir")
+                      (org-tags-match-list-sublevels t)
+                      (org-agenda-sorting-strategy '(priority-down todo-state-down effort-up category-keep))))
+          (tags-todo "-ANNULÉ/!-EN_COURS-SOUTE-ATTENTE-VALUE-GOAL"
+                     ((org-agenda-overriding-header "Tâches Disponibles")
+                      (org-agenda-sorting-strategy '(effort-up priority-down))))
+          (tags-todo "-ANNULÉ/!"
+                     ((org-agenda-overriding-header "Projets actuellement Actifs")
+                      (org-agenda-sorting-strategy '(effort-up priority-down category-keep))))
+          (tags-todo "-ANNULÉ/!ATTENTE|SOUTE"
+                     ((org-agenda-overriding-header "Attente ou Reporté Tâches")
+                      )))
+         nil)
+        ("r" "Tasks to Refile" alltodo ""
+         ((org-agenda-overriding-header "Tasks to Refile")
+          (org-agenda-files '("~/.org/inbox.org"))))
+        ("#" "Stuck Projects" tags-todo "-ANNULÉ/!-SOUTE-ATTENTE"
+         ((org-agenda-overriding-header "Stuck Projects")
+          ))
+        ("n" "Next Tasks" tags-todo "-ATTENTE-ANNULÉ/!EN_COURS"
+         ((org-agenda-overriding-header "Next Tasks")
+           (org-tags-match-list-sublevels t)
+          (org-agenda-sorting-strategy '(todo-state-down effort-up category-keep))))
+        ("R" "Tasks" tags-todo "-ANNULÉ/!-EN_COURS-SOUTE-ATTENTE"
+         ((org-agenda-overriding-header "Available Tasks")
+                    (org-agenda-sorting-strategy '(category-keep))))
+        ("p" "Projects" tags-todo "-ANNULÉ/!"
+         ((org-agenda-overriding-header "Currently Active Projects")
+          (org-agenda-sorting-strategy '(category-keep))
+          (org-tags-match-list-sublevels 'indented)))
+        ("w" "Waiting Tasks" tags-todo "-ANNULÉ/!ATTENTE|SOUTE"
+         ((org-agenda-overriding-header "Waiting and Postponed Tasks")
+                    ))))
+
+
+
+;; =============================================================
 ;; Mode Settings
 
 ;; compojure
@@ -393,7 +547,7 @@
 
 ;; Scheme; gambit / chicken / petite
 ;;(setq scheme-program-name "gsi -:s,d-")
-(setq scheme-program-name "csi")
+;;(setq scheme-program-name "csi")
 ;;(setq scheme-program-name "petite")
 
 ;; =============================================================
