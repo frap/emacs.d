@@ -76,32 +76,7 @@
           '(lambda ()
              (define-key inf-clojure-mode-map "\C-cl" 'erase-inf-buffer)))
 
-;; Golang
-;(maybe-install-and-require 'go-mode)
-;(maybe-install-and-require 'go-eldoc)
-;(add-hook 'go-mode-hook 'go-eldoc-setup)
-
-;; Haskell
-;(maybe-install-and-require 'haskell-mode)
-;(require 'haskell-interactive-mode)
-;(add-hook 'haskell-mode-hook 'interactive-haskell-mode)
-;(add-hook 'haskell-mode-hook 'haskell-indentation-mode)
-
-;(add-hook 'haskell-mode-hook
-;          '(lambda ()
-;             (define-key haskell-mode-map "\C-c\C-h" 'hoogle)))
-
-;(custom-set-variables
-; '(haskell-process-auto-import-loaded-modules t)
-; '(haskell-process-log t)
-; '(haskell-process-suggest-remove-import-lines t))
-
-;(diminish 'haskell-interactive-mode)
-;(diminish 'haskell-indentation-mode)
-
-;(setq auto-mode-alist (cons '("\\.purs$" . haskell-mode) auto-mode-alist))
-
-;; markdown
+;; Markdown
 (maybe-install-and-require 'markdown-mode)
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
@@ -172,8 +147,6 @@
 (maybe-install-and-require 'smartparens)
 (sp-use-paredit-bindings)
 (sp-pair "'" nil :actions :rem)
-;(add-hook 'haskell-mode-hook 'smartparens-mode)
-;(add-hook 'haskell-interactive-mode-hook 'smartparens-mode)
 (add-hook 'ruby-mode-hook 'smartparens-mode)
 (add-hook 'inf-clojure-mode-hook 'smartparens-mode)
 
@@ -193,8 +166,6 @@
 
 ;; Magit
 (maybe-install-and-require 'magit)
-(global-set-key (kbd "C-c C-g") 'magit-status)
-(global-set-key (kbd "C-c C-b") 'magit-blame-mode)
 (setq magit-last-seen-setup-instructions "1.4.0")
 (setq magit-revert-buffers 'silent)
 (setq magit-diff-refine-hunk t)
@@ -202,8 +173,6 @@
 ;; git gutter
 (maybe-install-and-require 'git-gutter)
 (diminish 'git-gutter-mode "gg")
-;; (global-git-gutter-mode t)
-(global-set-key (kbd "C-x C-g") 'git-gutter:toggle)
 
 ;; silver searcher
 (maybe-install-and-require 'ag)
@@ -214,7 +183,6 @@
                      (read-from-minibuffer "In filenames matching PCRE: " (ag/buffer-extension-regex))
                      (read-directory-name "Directory: " (ag/project-root default-directory))))
   (ag/search string directory :file-regex file-regex))
-(global-set-key (kbd "C-x M-f") 'ag-search)
 
 ;; eldoc
 (diminish 'eldoc-mode "doc")
@@ -237,7 +205,7 @@
 
 ;; Golden Ratio
 (maybe-install-and-require 'golden-ratio)
-(diminish 'golden-ratio-mode "AU")
+(diminish 'golden-ratio-mode "Au")
 (golden-ratio-mode 1)
 (add-to-list 'golden-ratio-exclude-modes "ediff-mode")
 
@@ -268,9 +236,6 @@
 
 ;; multiple cursors
 (maybe-install-and-require 'multiple-cursors)
-(global-set-key (kbd "C-c .") 'mc/mark-next-like-this)
-(global-set-key (kbd "C-c ,") 'mc/mark-previous-like-this)
-(global-set-key (kbd "C-c M-.") 'mc/mark-all-like-this)
 
 ;; IDO
 (maybe-install-and-require 'ido-ubiquitous)
@@ -285,7 +250,6 @@
 
 ;; expand region
 (maybe-install-and-require 'expand-region)
-(global-set-key (kbd "C-\\") 'er/expand-region)
 
 ;; yagist
 (maybe-install-and-require 'yagist)
@@ -305,8 +269,6 @@
 
 ;; avy
 (maybe-install-and-require 'avy)
-(global-set-key (kbd "M-g f") 'avy-goto-line)
-(global-set-key (kbd "M-g w") 'avy-goto-word-1)
 
 ;; show time
 (setq display-time-24hr-format t)
@@ -321,7 +283,6 @@
 ;; recentf mode
 (recentf-mode)
 (setq recentf-max-menu-items 25)
-(global-set-key (kbd "C-x C-r") 'recentf-open-files)
 
 (show-paren-mode)
 (global-auto-revert-mode t)
@@ -373,7 +334,27 @@
 (global-set-key (kbd "C-c <C-left>") '(lambda ()
                                         (interactive)
                                         (buf-move-left) (golden-ratio)))
+;; magit bindings
+(global-set-key (kbd "C-c C-g") 'magit-status)
+(global-set-key (kbd "C-c C-b") 'magit-blame-mode)
+;; avy commands
+(global-set-key (kbd "M-g f") 'avy-goto-line)
+(global-set-key (kbd "M-g w") 'avy-goto-word-1)
+;; expand region
+(global-set-key (kbd "C-\\") 'er/expand-region)
+;; recentf
+(global-set-key (kbd "C-x C-r") 'recentf-open-files)
+;; multiple cursors
+(global-set-key (kbd "C-c .") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-c ,") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c M-.") 'mc/mark-all-like-this)
 
+;; (global-git-gutter-mode t)
+(global-set-key (kbd "C-x C-g") 'git-gutter:toggle)
+
+
+;; ag search
+(global-set-key (kbd "C-x M-f") 'ag-search)
 ;; =============================================================
 ;; clean mode-line
 (defvar mode-line-cleaner-alist
@@ -435,6 +416,7 @@ want to use in the modeline *in lieu of* the original.")
 (global-set-key "\C-cl" 'org-store-link)
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
+(global-set-key (kbd "C-c c") 'org-capture)
 ;; org files
 (add-to-list 'load-path (expand-file-name "~/Dropbox/GTD"))
 (add-to-list 'auto-mode-alist '("\\.\\(org\\|org_archive\\|txt\\)"))
@@ -443,6 +425,39 @@ want to use in the modeline *in lieu of* the original.")
 (setq org-directory "~/Dropbox/GTD")
 (setq org-default-notes-file "~/Dropbox/GTD/inbox.org")
 
+;; fast-todo-selection
+(setq org-use-fast-todo-selection t)
+;; use SHIFT left/right for changing todo states without clocking chnages
+(setq org-treat-S-cursor-todo-selection-as-state-change nil)
+
+(setq org-todo-keywords
+      (quote ((sequence "TODO(t)" "EN_COURS(n)" "|" "FINI(d)")
+              (sequence "ATTENTE(w@/!)" "SOUTE(h@/!)" "|" "ANNULÉ(c@/!)" "TÉLÉPHONE" "RENDEZ_VOUS")
+              (sequence "GOAL(g)" "AIM(a)" "|" "FINI(d)"))))
+;; todo state change changes
+(setq org-todo-state-tags-triggers
+      (quote (("ANNULÉ" ("ANNULÉ" . t))
+              ("ATTENTE" ("ATTENTE" . t))
+              ("SOUTE" ("ATTENTE") ("SOUTE" . t))
+              (done ("ATTENTE") ("SOUTE"))
+              ("TODO" ("ATTENTE") ("ANNULÉ") ("SOUTE"))
+              ("EN_COURS" ("ATTENTE") ("ANNULÉ") ("SOUTE"))
+              ("FINI" ("ATTENTE") ("ANNULÉ") ("SOUTE")))))
+
+(setq org-todo-keyword-faces
+      '(("UN_JOUR"       :foreground "#c93f80" :weight bold)
+        ("EN_COURS"      :foreground "#2f2ccc" :weight bold)
+        ("ATTENTE"       :foreground "#fd9b3b" :weight bold)
+        ("FINI"          :foreground "#19b85d" :weight bold)
+        ("SOUTE"         :foreground "#afff64" :weight bold)
+        ("ANNULÉ"        :foreground "#b81590" :weight bold)
+        ("TÉLÉPHONE"     :foreground "#2eb9a7" :weight bold)
+        ("GOAL"          :foreground "#1010ff" :weight bold)
+        ("VALUE"         :foreground "#afff10" :weight bold)
+        ("QUOTE"         :foreground "#146290" :weight bold)
+        ("DAEMONS"       :foreground "#b46230" :weight bold)
+        ("RENDEZ_VOUS"   :foreground "#0f4f43" :weight bold)
+        ))
 ;; sets the TAG list
 (setq org-tag-alist '((:startgroup . nil)
                       ("@maision" . ?m)
@@ -453,11 +468,12 @@ want to use in the modeline *in lieu of* the original.")
                       ("TÉLÉPHONE" . ?t)
                       ("RENDEZ_VOUS" . ?r)
                       (:startgroup . nil)
-                      ("#ATTENTE" . ?w)
-                      ("#SOUTE" . ?h)
-                      ("#ANNULÉ" . ?a)
-                      ("#PROXIMO" . ?p)
-                      ("#UN_JOUR" . ?j)
+                      ("ATTENTE" . ?w)
+                      ("SOUTE" . ?h)
+                      ("ANNULÉ" . ?a)
+                      ("PROXIMO" . ?p)
+                      ("UN_JOUR" . ?j)
+                      ("EN_COURS" . ?n)
                       (:endgroup . nil)
                       ("en ligne" . ?e)))
 
