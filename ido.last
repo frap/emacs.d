@@ -1,0 +1,405 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/agasson/Dev/devops/packer/tsp-packer/ansible/" . "roles/")
+ ("/Users/agasson/Dev/devops/packer/tsp-packer/scripts/" . "centos/")
+ ("/Users/agasson/Dev/devops/packer/tsp-packer/" . "ansible/")
+ ("/Users/agasson/Workspaces/Atea/UccxStats/" . "WebRoot/")
+ ("/Users/agasson/Workspaces/Atea/" . "UccxStats/")
+ ("/Users/agasson/Workspaces/" . "Atea/")
+ ("/Users/agasson/Dev/clj/oncall/src/clj/oncall/" . "routes/")
+ ("/Users/agasson/Dev/clj/crm-slack/src/cljs/" . "crm_slack/")
+ ("/Users/agasson/Dev/clj/crm-slack/resources/" . "sql/")
+ ("/Users/agasson/Dev/clj/crm-slack/" . "resources/")
+ ("/Users/agasson/Dev/clj/crm-slack/env/prod/clj/" . "crm_slack/")
+ ("/Users/agasson/Dev/clj/crm-slack/env/prod/" . "resources/")
+ ("/Users/agasson/Dev/clj/crm-slack/env/" . "prod/")
+ ("/Users/agasson/Dev/clj/crm-slack/src/clj/crm_slack/" . "routes/")
+ ("/Users/agasson/Dev/clj/crm-slack/src/clj/" . "crm_slack/")
+ ("/Users/agasson/Dev/clj/crm-slack/src/cljc/" . "crm_slack/")
+ ("/Users/agasson/Dev/clj/crm-slack/src/" . "cljs/")
+ ("/Users/agasson/Dev/clj/oncall/resources/" . "templates/")
+ ("/Users/agasson/Dev/clj/oncall/" . "resources/")
+ ("/Users/agasson/Dev/clj/oncall/env/test/" . "resources/")
+ ("/Users/agasson/Dev/clj/oncall/env/" . "dev/")
+ ("/Users/agasson/Dev/clj/oncall/env/prod/clj/" . "myapp/")
+ ("/Users/agasson/Dev/clj/oncall/env/prod/" . "clj/")
+ ("/Users/agasson/Dev/clj/oncall/env/dev/" . "clj/")
+ ("/Users/agasson/Dev/clj/oncall/test/clj/" . "myapp/")
+ ("/Users/agasson/Dev/clj/oncall/test/" . "clj/")
+ ("/Users/agasson/Dev/clj/oncall/src/clj/" . "oncall/")
+ ("/Users/agasson/Dev/clj/oncall/src/" . "clj/")
+ ("/Users/agasson/Dev/clj/atea-oncall/resources/public/" . "templates/")
+ ("/Users/agasson/Dev/clj/myapp/src/clj/myapp/" . "routes/")
+ ("/Users/agasson/Dev/clj/myapp/env/dev/" . "resources/")
+ ("/Users/agasson/Dev/clj/myapp/env/prod/clj/" . "myapp/")
+ ("/Users/agasson/Dev/clj/myapp/env/prod/" . "resources/")
+ ("/Users/agasson/Dev/clj/myapp/env/" . "dev/")
+ ("/Users/agasson/Dev/clj/myapp/resources/" . "templates/")
+ ("/Users/agasson/Dev/clj/myapp/" . "resources/")
+ ("/Users/agasson/Dev/clj/myapp/src/clj/" . "myapp/")
+ ("/Users/agasson/Dev/clj/myapp/src/" . "clj/")
+ ("/Users/agasson/Dev/clj/atea-reagent/src/cljs/" . "atea_reagent/")
+ ("/Users/agasson/Dev/clj/atea-reagent/src/" . "cljs/")
+ ("/Users/agasson/Dev/clj/atea-oncall/src/atea_oncall/" . "routes/")
+ ("/Users/agasson/Dev/clj/atea-web/ui-src/atea_web/" . "ui/")
+ ("/Users/agasson/Dev/clj/atea-web/ui-src/" . "atea_web/")
+ ("/Users/agasson/Dev/clj/atea-web/" . "ui-src/")
+ ("/Users/agasson/Dev/clj/atea-web/src/atea_web/" . "service/")
+ ("/Users/agasson/Dev/clj/atea-web/src/" . "atea_web/")
+ ("/Users/agasson/Dev/clj/web_test/src/" . "web_test/")
+ ("/Users/agasson/Dev/clj/atea-oncall/resources/" . "public/")
+ ("/Users/agasson/Dev/clj/atea-oncall/" . "resources/")
+ ("/Users/agasson/Dev/clj/atea-oncall/src/" . "atea_oncall/")
+ ("/Users/agasson/Dev/clj/gae-app-demo/resources/public/" . "templates/")
+ ("/Users/agasson/Dev/clj/gae-app-demo/resources/" . "config/")
+ ("/Users/agasson/Dev/clj/gae-app-demo/" . "resources/")
+ ("/Users/agasson/Documents/" . "financial/")
+ ("/Users/agasson/Dev/clj/gae-app-demo/src/gae_app_demo/" . "views/")
+ ("/Users/agasson/Dev/clj/gae-app-demo/src/" . "gae_app_demo/")
+ ("/Users/agasson/Dev/clj/gcal/src/" . "gcal/")
+ ("/Users/agasson/Dev/devops/packer/tsp-packer/http/" . "ateaol/")
+ ("/Users/agasson/Dev/devops/packer/tsp-packer/ansible/roles/atea-packer/" . "tasks/")
+ ("/Users/agasson/Dev/devops/packer/tsp-packer/ansible/roles/" . "atea-packer/")
+ ("/Users/agasson/Dev/clj/escherize-cljs/" . "resources/")
+ ("/Users/agasson/Dev/clj/cljain/src/" . "cljain/")
+ ("/Users/agasson/Dev/clj/postserver/" . "src/")
+ ("/Users/agasson/Dev/clj/yada-test/src/clj/" . "yada_test/")
+ ("/Users/agasson/Dev/clj/gas-search/src/" . "gassearch/")
+ ("/Users/agasson/Dev/clj/asyncweb/src/" . "asyncweb/")
+ ("/Users/agasson/Dev/clj/asyncweb/" . "src/")
+ ("/Users/agasson/" . "Workspaces/")
+ ("/Users/agasson/Dev/clj/clj-slack-client/src/" . "clj_slack_client/")
+ ("/Users/agasson/Dev/devops/ansible/roles/atea-TSPcustomer-settings/" . "tasks/")
+ ("/Users/agasson/Dev/devops/ansible/roles/atea-TSPmonitor/" . "defaults/")
+ ("/Users/agasson/Dev/devops/ansible/roles/atea-TSPbase/" . "tasks/")
+ ("/Users/agasson/Dev/devops/ansible/roles/customer-copyVM/" . "tasks/")
+ ("/Users/agasson/Dev/clj/modern-cljs/src/clj/" . "modern_cljs/")
+ ("/Users/agasson/Dev/clj/modern-cljs/html/" . "css/")
+ ("/Users/agasson/Dev/clj/modern-cljs/" . "sql/")
+ ("/Users/agasson/Dev/clj/modern-cljs/src/cljs/" . "modern_cljs/")
+ ("/Users/agasson/Dev/clj/modern-cljs/src/" . "cljs/")
+ ("/Users/agasson/Dev/devops/ansible/roles/customer-share/" . "tasks/")
+ ("/Users/agasson/Dev/devops/ansible/roles/install-filebeat/" . "tasks/")
+ ("/Users/agasson/Dev/devops/ansible/roles/install-logstash/" . "examples/")
+ ("/Users/agasson/Dev/devops/ansible/roles/install-kibana/" . "examples/")
+ ("/Users/agasson/Dev/devops/ansible/roles/install-elasticsearch/" . "defaults/")
+ ("/Users/agasson/Dev/devops/casper/" . "screenshots/")
+ ("/Users/agasson/Dev/devops/ansible/roles/install-oracle-xe/" . "tasks/")
+ ("/Users/agasson/Dev/devops/ansible/roles/install-oracleXE/" . "tasks/")
+ ("/Users/agasson/Dev/devops/ansible/roles/os-hardening/test/integration/" . "default/")
+ ("/Users/agasson/Dev/devops/ansible/roles/os-hardening/test/" . "integration/")
+ ("/Users/agasson/Dev/devops/ansible/roles/change-snmp/" . "templates/")
+ ("/Users/agasson/Dev/devops/ansible/roles/base/" . "tasks/")
+ ("/Users/agasson/Dev/devops/ansible/roles/atea-upgraderepo/" . "tasks/")
+ ("/Users/agasson/Dev/devops/ansible/roles/os-hardening/" . "test/")
+ ("/Users/agasson/Dev/devops/ansible/roles/atea-security-setup/" . "tasks/")
+ ("/Users/agasson/Dev/devops/ansible/roles/gas-sshkeys/" . "tasks/")
+ ("/Users/agasson/Dev/devops/ansible/roles/atea-sysctl/" . "tasks/")
+ ("/Users/agasson/Dev/devops/ansible/roles/atea-oracle/" . "tasks/")
+ ("/Users/agasson/Dev/clj/postserver/src/" . "postserver/")
+ ("/Users/agasson/Dev/packer/tsp-packer/http/" . "ateaol-7.1/")
+ ("/Users/agasson/Dev/devops/ansible/roles/atea-installUAW/" . "tasks/")
+ ("/Users/agasson/Dev/devops/ansible/" . "roles/")
+ ("/Users/agasson/Dev/devops/" . "ansible/")
+ ("/Users/agasson/Dev/packer/tsp-packer/ansible/roles/" . "atea-packer/")
+ ("/Users/agasson/Dev/packer/tsp-packer/" . "ansible/")
+ ("/Users/agasson/Dev/devops/ansible/roles/atea-packer/" . "tasks/")
+ ("/Users/agasson/Dev/packer/tsp-packer/ansible/roles/atea-packer/" . "tasks/")
+ ("/Users/agasson/Dev/packer/tsp-packer/ansible/" . "roles/")
+ ("/Users/agasson/Dev/devops/ansible/roles/ansible-role-gitlab/" . "tasks/")
+ ("/Users/agasson/Dev/devops/ansible/roles/" . "customer-share/")
+ ("/Users/agasson/Dev/devops/ansible/roles/ansible-role-bind/" . "defaults/")
+ ("/Users/agasson/Dev/packer/packer-centos-6/" . "http/")
+ ("/Users/agasson/Dev/packer/" . "tsp-packer/")
+ ("/Users/agasson/Dev/devops/ansible/roles/oracle-java/" . "defaults/")
+ ("/Users/agasson/Dev/packer/bento/scripts/" . "common/")
+ ("/Users/agasson/Dev/packer/bento/http/" . "debian-8/")
+ ("/Users/agasson/Dev/vagrant/ffuent/packer/http/" . "debian-8.2.0-amd64/")
+ ("/Users/agasson/Dev/vagrant/ffuent/packer/" . "http/")
+ ("/Users/agasson/Dev/packer-tut/" . "http/")
+ ("/Users/agasson/Dev/vagrant/packer-templates/oracle-6.5/" . "http/")
+ ("/Users/agasson/Dev/atea/" . "ks/")
+ ("/Users/agasson/Dev/vagrant/ffuent/" . "packer/")
+ ("/Users/agasson/Dev/vagrant/packer-templates/" . "oracle-6.5/")
+ ("/Users/agasson/Dev/vagrant/" . "ffuent/")
+ ("/Users/" . "agasson/")
+ ("/" . "Users/")
+ ("/Users/agasson/Dev/clj/" . "yada-test/")
+ ("/Users/agasson/Dev/" . "clj/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/agasson/.emacs.d/"
+ "/Users/agasson/Dev/devops/packer/tsp-packer/"
+ "/Users/agasson/Dev/devops/packer/tsp-packer/scripts/centos/"
+ "/Users/agasson/Dev/devops/packer/tsp-packer/http/ateaol/"
+ "/Users/agasson/Dev/devops/packer/tsp-packer/ansible/roles/atea-packer/tasks/"
+ "/Users/agasson/Dev/devops/packer/tsp-packer/scripts/common/"
+ "/Users/agasson/Dev/devops/packer/tsp-packer/floppy/"
+ "/Users/agasson/Dev/devops/packer/windows/"
+ "/Users/agasson/Workspaces/Atea/UccxStats/WebRoot/"
+ "/Users/agasson/Documents/gtd/"
+ "/Users/agasson/.boot/"
+ "/Users/agasson/Dev/clj/modern-cljs/src/cljs/modern_cljs/"
+ "/Users/agasson/Dev/clj/oncall/src/clj/oncall/"
+ "/Users/agasson/Dev/clj/oncall/resources/templates/"
+ "/Users/agasson/Dev/clj/oncall/src/clj/oncall/routes/"
+ "/Users/agasson/Dev/clj/oncall/env/dev/clj/"
+ "/Users/agasson/Dev/clj/crm-slack/resources/sql/"
+ "/Users/agasson/Dev/clj/crm-slack/src/cljs/crm_slack/"
+ "/Users/agasson/Dev/clj/crm-slack/resources/templates/"
+ "/Users/agasson/Dev/clj/crm-slack/env/prod/clj/crm_slack/"
+ "/Users/agasson/Dev/clj/crm-slack/src/clj/crm_slack/routes/"
+ "/Users/agasson/Dev/clj/crm-slack/src/clj/crm_slack/db/"
+ "/Users/agasson/Dev/clj/crm-slack/env/prod/resources/"
+ "/Users/agasson/Dev/clj/crm-slack/env/dev/clj/crm_slack/"
+ "/Users/agasson/Dev/clj/crm-slack/src/clj/crm_slack/"
+ "/Users/agasson/Dev/clj/yada/"
+ "/Users/agasson/Dev/clj/postserver/src/postserver/"
+ "/Users/agasson/Dev/clj/postserver/"
+ "/Users/agasson/Dev/clj/rest-media-demo/"
+ "/Users/agasson/Dev/clj/gae-app/"
+ "/Users/agasson/Dev/clj/clj-slack-client/"
+ "/Users/agasson/Dev/clj/atea-web/"
+ "/Users/agasson/Dev/clj/crm-slack/src/cljc/crm_slack/"
+ "/Users/agasson/Dev/clj/oncall/"
+ "/Users/agasson/Dev/clj/oncall/env/test/resources/"
+ "/Users/agasson/Dev/clj/oncall/env/prod/clj/myapp/"
+ "/Users/agasson/Dev/clj/oncall/env/prod/resources/"
+ "/Users/agasson/Dev/clj/oncall/env/dev/clj/myapp/"
+ "/Users/agasson/Dev/clj/oncall/env/dev/resources/"
+ "/Users/agasson/Dev/clj/oncall/test/clj/myapp/test/"
+ "/Users/agasson/Dev/clj/oncall/src/clj/myapp/routes/"
+ "/Users/agasson/Dev/clj/oncall/src/clj/myapp/"
+ "/Users/agasson/Dev/clj/myapp/src/clj/myapp/"
+ "/Users/agasson/Dev/clj/myapp/resources/templates/"
+ "/Users/agasson/Dev/clj/myapp/src/clj/myapp/routes/"
+ "/Users/agasson/Dev/clj/atea-oncall/resources/public/templates/"
+ "/Users/agasson/Dev/clj/myapp/"
+ "/Users/agasson/Documents/"
+ "/Users/agasson/Dev/clj/atea-oncall/src/atea_oncall/routes/"
+ "/Users/agasson/Dev/clj/atea-oncall/src/atea_oncall/views/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "gas-org.el"
+ "atea-oracle-6.7-x86_64.json"
+ "cleanup.sh"
+ "networking.sh"
+ "ansible7.sh"
+ "ks6.cfg"
+ "atea-oracle-7.1-x86_64.json"
+ "ssh.yml"
+ "sshd.sh"
+ "sudoers.sh"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/agasson/.emacs.d/" (22349 11009 0 0) "tramp" "target/" "snippets/" "recentf~" "recentf" "projectile-bookmarks.eld" "places" "init.el" "ido.last~" "ido.last" "gas-org.el" "elpa/" "cider-history" "backups/" "auto-save-list/" ".gitignore" ".git/" ".#init.el" "../" "./")
+
+ ("/Users/agasson/Dev/devops/packer/tsp-packer/" (22349 10311 0 0) "scripts/" "packer-virtualbox/" "oracle7.json" "oracle-6.7-x86_64.json" "keys/" "http/" "floppy/" "esxci-shutdown.yml" "builds/" "atea-oracle-vssphere.json" "atea-oracle-7.1-x86_64.json" "atea-oracle-6.7-x86_64.json" "ansible/" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/agasson/Dev/devops/packer/tsp-packer/scripts/centos/" (22349 9584 0 0) "networking.sh" "cleanup.sh" "ansible7.sh" "ansible6.sh" "ansible.sh" "../" "./")
+
+ ("/Users/agasson/Dev/devops/packer/tsp-packer/http/ateaol/" (22349 8076 0 0) "old-ks.cfg" "ol7.cfg" "min-ks.cfg" "ks7-atea.cfg" "ks6.cfg" "#old-ks.cfg#" "#ks6.cfg#" "../" "./")
+
+ ("/Users/agasson/Dev/devops/packer/tsp-packer/ansible/roles/atea-packer/tasks/" (22312 6168 0 0) "vmware.yml" "virtualbox.yml" "ssh.yml" "main.yml" "download-tsp.yml" "../" "./")
+
+ ("/Users/agasson/Dev/devops/packer/tsp-packer/ansible/roles/atea-packer/" (22287 17274 0 0) "vars/" "templates/" "tasks/" "meta/" "handlers/" "../" "./")
+
+ ("/Users/agasson/Dev/devops/packer/tsp-packer/ansible/roles/" (22082 44277 0 0) "atea-packer/" "../" "./")
+
+ ("/Users/agasson/Dev/devops/packer/tsp-packer/ansible/" (22102 46145 0 0) "roles/" "packer.yml" "hosts" "../" "./")
+
+ ("/Users/agasson/Dev/devops/packer/windows/" (22349 1059 0 0) "wsim/" "wip/" "win8x86-pro.json" "win8x86-pro-ssh.json" "win8x86-pro-cygwin.json" "win8x86-enterprise.json" "win8x86-enterprise-ssh.json" "win8x86-enterprise-cygwin.json" "win8x64-pro.json" "win8x64-pro-ssh.json" "win8x64-pro-cygwin.json" "win8x64-enterprise.json" "win8x64-enterprise-ssh.json" "win8x64-enterprise-cygwin.json" "win81x86-pro.json" "win81x86-pro-ssh.json" "win81x86-pro-cygwin.json" "win81x86-enterprise.json" "win81x86-enterprise-ssh.json" "win81x86-enterprise-cygwin.json" "win81x64-pro.json" "win81x64-pro-ssh.json" "win81x64-pro-cygwin.json" "win81x64-enterprise.json" "win81x64-enterprise-ssh.json" "win81x64-enterprise-cygwin.json" "win7x86-pro.json" "win7x86-pro-ssh.json" "win7x86-pro-cygwin.json" "win7x86-enterprise.json" "win7x86-enterprise-ssh.json" "win7x86-enterprise-cygwin.json" "win7x64-pro.json" "win7x64-pro-ssh.json" "win7x64-pro-cygwin.json" "win7x64-enterprise.json" "win7x64-enterprise-ssh.json" "win7x64-enterprise-cygwin.json" "win2012r2-standardcore.json" "win2012r2-standardcore-ssh.json" "win2012r2-standardcore-cygwin.json" "win2012r2-standard.json" "win2012r2-standard-ssh.json" "win2012r2-standard-cygwin.json" "win2012r2-datacenter.json" "win2012r2-datacenter-ssh.json" "win2012r2-datacenter-cygwin.json" "win2012-standard.json" "win2012-standard-ssh.json" "win2012-standard-cygwin.json" "win2012-datacenter.json" "win2012-datacenter-ssh.json" "win2012-datacenter-cygwin.json" "win2008r2-web.json" "win2008r2-web-ssh.json" "win2008r2-web-cygwin.json" "win2008r2-standard.json" "win2008r2-standard-ssh.json" "win2008r2-standard-cygwin.json" "win2008r2-enterprise.json" "win2008r2-enterprise-ssh.json" "win2008r2-enterprise-cygwin.json" "win2008r2-datacenter.json" "win2008r2-datacenter-ssh.json" "win2008r2-datacenter-cygwin.json" "VERSION" "tpl/" "test/" "script/" "README.md" "output-virtualbox-iso/" "Makefile" "LICENSE" "floppy/" "eval-win8x64-enterprise.json" "eval-win8x64-enterprise-ssh.json" "eval-win8x64-enterprise-cygwin.json" "eval-win81x86-enterprise.json" "eval-win81x86-enterprise-ssh.json" "eval-win81x86-enterprise-cygwin.json" "eval-win81x64-enterprise.json" "eval-win81x64-enterprise-ssh.json" "eval-win81x64-enterprise-cygwin.json" "eval-win7x86-enterprise.json" "eval-win7x86-enterprise-ssh.json" "eval-win7x86-enterprise-cygwin.json" "eval-win7x64-enterprise.json" "eval-win7x64-enterprise-ssh.json" "eval-win7x64-enterprise-cygwin.json" "eval-win2012r2-standard.json" "eval-win2012r2-standard-ssh.json" "eval-win2012r2-standard-cygwin.json" "eval-win2012r2-datacenter.json" "eval-win2012r2-datacenter-ssh.json" "eval-win2012r2-datacenter-cygwin.json" "eval-win2008r2-standard.json" "eval-win2008r2-standard-ssh.json" "eval-win2008r2-standard-cygwin.json" "eval-win2008r2-datacenter.json" "eval-win2008r2-datacenter-ssh.json" "eval-win2008r2-datacenter-cygwin.json" "eval-win10x86-enterprise.json" "eval-win10x86-enterprise-ssh.json" "eval-win10x86-enterprise-cygwin.json" "eval-win10x64-gas.json" "eval-win10x64-enterprise.json" "eval-win10x64-enterprise-ssh.json" "eval-win10x64-enterprise-cygwin.json" "CHANGELOG.md" "box/" "bin/" "AUTHORS" ".windows/" ".gitignore" ".gitattributes" ".git/" ".#eval-win2012r2-standard.json" "#eval-win2012r2-standard.json#" "../" "./")
+
+ ("/Users/agasson/Dev/devops/packer/tsp-packer/scripts/common/" (22310 54662 0 0) "vmtools.sh" "sudoers.sh" "sshd.sh" "minimise.sh" "metadata.sh" "atearoot.sh" "../" "./")
+
+ ("/Users/agasson/Dev/devops/packer/tsp-packer/scripts/" (22310 54662 0 0) "common/" "centos/" "ansible.sh" "../" "./")
+
+ ("/Users/agasson/Dev/devops/packer/tsp-packer/http/" (22310 46490 0 0) "atearoot_rsa.pub" "ateaol/" "../" "./")
+
+ ("/Users/agasson/Dev/devops/packer/tsp-packer/floppy/" (22287 27618 0 0) "thirdparty_rsa.pub" "atearoot_rsa.pub" "atea_metadata.json" "../" "./")
+
+ ("/Users/agasson/Dev/devops/packer/" (22289 32375 0 0) "windows/" "tsp-packer/" "packer-tut/" "packer-templates/" "packer-centos-6/" "ffuent/" "bento-gas/" "bento/" "aws-test/" "ansible-packer-vagrant-openstack-ec2/" "../" "./")
+
+ ("/Users/agasson/Workspaces/Atea/UccxStats/WebRoot/" (22343 41813 0 0) "WEB-INF/" "wallboard_bar.jsp" "universityofsydney.jsp" "thyssenkrupp.jsp" "system.jsp" "sounds/" "setup.jsp" "restwaitdatajson.jsp" "restjson.jsp" "restcampjson.jsp" "restcalldatajson.jsp" "restasbjson.jsp" "rest.jsp" "pageselection.jsp" "nba_gridQA_summary.jsp" "moble_grid.jsp" "mobile_summary.jsp" "META-INF/" "messagepage.jsp" "js/" "jabber.jsp" "includes/" "hello_spnego.zip" "hello_spnego.jsp" "gosford1.jsp" "gadget_atea_gridQ_permA2.jsp" "Gadget-dashboard.jsp" "fonts/" "favicon.ico" "DSS_gridQ_summary.jsp" "dashboard2.jsp" "dashboard1.jsp" "css/" "coates_gridQA_IT.jsp" "coates_gridQA_AR2.jsp" "coates_gridQA_AR.jsp" "cityofsydney_IT_SD.jsp" "broadcastaustralia2.jsp" "broadcastaustralia1.jsp" "bl_hnsw_teamleader.jsp" "bl_hnsw_largescreen.jsp" "bl_hnsw_adhc.jsp" "bl_dcc_skill.jsp" "bl_dcc_service_new.jsp" "bl_dcc_service.jsp" "bl_dcc_aht.jsp" "atea_t16.jsp" "atea_pageselection.jsp" "atea_gridQA_summary.jsp" "atea_gridQA_scm.jsp" "atea_gridQA2_summary.jsp" "atea_gridQA2.jsp" "atea_gridQA.jsp" "atea_gridQ_tableA.jsp" "atea_gridQ_table_summary.jsp" "atea_gridQ_table2_summary.jsp" "atea_gridQ_table2.jsp" "atea_gridQ_table.jsp" "atea_gridQ_summary.jsp" "atea_gridQ_permA2.jsp" "atea_gridQ2.jsp" "atea_gridQ.jsp" "atea_gridA.jsp" "atea_grid_permA.jsp" "atea_barchart.jsp" "atea2.jsp" "Ariat.jsp" "../" "./")
+
+ ("/Users/agasson/Workspaces/Atea/UccxStats/" (22347 33240 0 0) "WebRoot/" "UccxStats.war" "sso_notes.txt" "src/" "pom.xml" "install.rtfd/" "install.pdf" "er_diagram.png" "doc/" "buildwar.xml" "build.xml" "ATEA_UAW_new.mer" "ATEA_UAW_2.mer" "atea_uaw.pdf" "ATEA_UAW.mer" ".tern-project" ".svn/" ".settings/" ".project" ".myumldata" ".mymetadata" ".externalToolBuilders/" ".DS_Store" ".classpath" "../" "./")
+
+ ("/Users/agasson/Workspaces/Atea/" (22342 32660 0 0) "VMS7/" "UccxStats/" "SnifferServer_v2_0/" "Servers/" "ResMedCDA/" "MulticastRecordingFESA/" "LineGroupMember/" "LicenseManager/" "ck/" "ATEA_UC/" ".metadata/" ".DS_Store" "../" "./")
+
+ ("/Users/agasson/Workspaces/" (22342 32655 0 0) "Atea/" ".DS_Store" "../" "./")
+
+ ("/Users/agasson/" (22347 55007 0 0) "zenburn-theme.el" "Workspaces/" "whanganui.jpg" "UAW_Administration_Guide_2_2_01a.pdf" "trac.sql" "std-build.txt" "repos/" "quotes.txt" "Public/" "pid/" "Pictures/" "pentest/" "only-limits.jpg" "NFJS_theMagazine_Vol2_Issue1_March2010.pdf" "nba_gridQA_summary.jsp" "MyJabberFiles/" "Music/" "Movies/" "logstash.map" "Library/" "leblaireau.jpg" "known_hosts" "gas.jpg" "euca2ools-3.3.0.tar.xz" "Downloads/" "Documents/" "Dev/" "Desktop/" "bin/" "AteaTSP.bin" "Applications/" "2" ".Xauthority" ".vnc/" ".viminfo" ".vim/" ".vagrant.d/" ".Trash/" ".subversion/" ".ssh/" ".squirrel-sql/" ".sqldeveloper/" ".rnd" ".psql_history" ".packer.d/" ".oracle_jre_usage/" ".myeclipse.properties" ".myeclipse/" ".m2/" ".local/" ".lein/" ".jrtmt/" ".InstallAnywhere/" ".gnupg/" ".gnome2/" ".gitconfig" ".gem/" ".emacs.d/" ".eclipse/" ".DS_Store" ".deliverycenter.system" ".deliverycenter.installs" ".cups/" ".config/" ".CFUserTextEncoding" ".cache/" ".boot/" ".bashrc" ".bash_sessions/" ".bash_profile" ".bash_history" ".aws/" ".ApacheDirectoryStudio/" ".anyconnect" ".ansible/" "../" "./")
+
+ ("/Users/agasson/Documents/" (22347 24057 0 0) "Zold letter to Peter.docx" "yada.pdf" "Xmas.pages" "WSAPI Cisco Developer Guide.pdf" "WebEx/" "washpool.tiff" "waipakihijpeg.jpg" "Waipakihi3.tiff" "Waipakihi3.jpg" "waipakihi2.tiff" "waipakihi.tiff" "waipakihi.jp2" "voi-cube-uc-gateway-services.pdf" "VMS/" "Virtual Machines.localized/" "Vale-EMP-AsBuilt.pages" "usgcb-workstation-ks.cfg.txt" "UCCX-RTStats-10.5-dbschema.pdf" "TheArtOfMonitoring-riemann.pdf" "Tauanui access.tiff" "Supplier Candidate Profile Details - Gas.numbers" "smash-emoji.jpeg" "SIPProfile-toRecorder.tiff" "SIPProfile-toRecorder.png" "SIPProfile-toGW.tiff" "SIPProfile-toGW.png" "SIP-LineGWrecording-set.tiff" "SIP-LineGWrecording-set.png" "SingTel Vulnerability -Monthly Assessment List-February 2016.xlsx" "SingTel Vulnerability -Monthly Assessment List-February 2016.numbers" "SCM-AdministratorGuide-2-1d.pdf" "Sal-Gas-prenup.docx" "request-your-own-criminal-conviction-history.pdf" "RecordingProfile.tiff" "RecordingProfile.png" "quotes.txt" "parking-review2.pdf" "orongarongas.tiff" "Oracle_Databases_on_VMware_-_Best_Practices_Guide.pdf" "oracle-imp.sql.rtf" "oracle-11gr2-quickinstall-linux.pdf" "numberplate.pages" "New-Zealand-Application-for-Review-2015.pdf" "MORE-Kickstart-Tips-and-Tricks.pdf" "maymorn2.tiff" "logstashconfigguide-sample.pdf" "latrocha-title.pages" "IRD2016review-003.pdf" "IRD2016review-002.pdf" "IRD2016review-001.pdf" "house.xml" "gtd/" "GPAM Third party access set-up form.pages" "GPAM Third party access set-up form word.docx" "gina-houses.pdf" "gasbike_tourmalet.jpg" "gas-sig.rtfd/" "gas-sig.pdf" "FTR-routepatterns1.tiff" "FTR-routepatterns.tiff" "FTR-routepatterns.png" "financial/" "expense claim may -gas.numbers" "epg.xml" "epg.pdf" "epg" "eo-lo-sip-flow.jpg" "elvis-dance.gif" "elvis-1171.gif" "elvis/" "Discrepancies_UnifiedCCX_Reports.pdf" "dhtrailbmx.pdf" "customers/" "CUCM-SIPProfile-BestEffortEarlyOffer.tiff" "CUCM-SIPProfile-BestEffortEarlyOffer.png" "CUCM-SIPProfile-BestEffortEarlyOffer.pdf" "CounselsChamber-VMS-AsBuilt.pdf" "CounselsChamber-VMS-AsBuilt.pages" "cisco/" "ateaoncall.tiff" "ateaoncall.pdf" "atea_systems_logo2.png" "ATEA VPN access requirements.pdf" "ATEA VPN access requirements.pages" "Atea Training DSA for Telstra.pdf" "Atea 2015 AsBuitTemplate1.pages" "atea/" "agasson-criminal-conviction-request.pdf" "8oakdale-offer3:3.pdf" "8oakdale-offer2:3.pdf" "8oakdale-offer1:3.pdf" "3-4shorts.pdf" "2016-eur-pdf-BRKUCC-2932.pdf" "2016-eur-pdf-BRKUCC-2501.pdf" "2016-eur-pdf-BRKUCC-2270.pdf" "2016-eur-pdf-BRKUCC-2076.pdf" "2016-eur-pdf-BRKUCC-2011.pdf" "2015-usa-pdf-BRKUCC-2612.pdf" "2015-usa-pdf-BRKUCC-2347.pdf" "2015-usa-pdf-BRKUCC-2347-Notes.pdf" "2014-5 tax:revenue receipts.xlsx" "2014-5 tax:revenue receipts.numbers" "11gR2-quickinstallguide.pdf" "1019_Gas Recording 8851_SEP382056445EEE_3d9a4fd9-a8b5-431c-aafd-725f8c063131.au" ".localized" ".DS_Store" "../" "./")
+
+ ("/Users/agasson/.vagrant.d/" (22312 3046 0 0) "tmp/" "setup_version" "rgloader/" "plugins.json" "insecure_private_key" "gems/" "data/" "boxes/" "../" "./")
+
+ ("/Users/agasson/.boot/" (22340 9002 0 0) "profile.boot" "cache/" "boot.properties" "../" "./")
+
+ ("/Users/agasson/Dev/clj/modern-cljs/" (22340 9097 0 0) "test/" "target/" "src/" "out/" "html/" "build.boot" "boot.properties" ".nrepl-port" ".nrepl-history" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/agasson/Dev/" (22311 64394 0 0) "VBox/" "SIP/" "security/" "rb/" "py/" "java/" "isos/" "devops/" "clj/" "CalltoJamie-unanswered.pcapng" "AXL/" "atea/" ".DS_Store" "../" "./")
+
+ ("/Users/agasson/Dev/clj/" (22338 40732 0 0) "yada-test/" "yada-nosure/" "yada/" "web_test/" "rest-media-demo/" "postserver/" "oncall/" "nzb/" "mount/" "modern-cljs/" "lunarlander/" "lum-test/" "java-interop/" "gviz/" "getting-started/" "gcal/" "gas-search/" "gas-reagent/" "gas-moderncljs/" "gae-app/" "escherize-cljs/" "edge/" "crm-slack/" "cljain/" "clj-slack-client/" "chazel/" "boot-play/" "atea-web/" "atea-reagent/" "atea-oncall/" "asyncweb/" ".DS_Store" "../" "./")
+
+ ("/Users/agasson/Dev/clj/modern-cljs/src/cljs/modern_cljs/" (22338 41564 0 0) "shopping.cljs" "reagent.cljs" "login.cljs" "../" "./")
+
+ ("/Users/agasson/Dev/clj/modern-cljs/src/cljs/" (22338 40899 0 0) "modern_cljs/" "../" "./")
+
+ ("/Users/agasson/Dev/clj/modern-cljs/src/" (22338 40899 0 0) "cljs/" "cljc/" "clj/" "../" "./")
+
+ ("/Users/agasson/Dev/clj/modern-cljs/html/" (22338 41322 0 0) "shopping.html" "reagent.html" "index.html" "css/" "../" "./")
+
+ ("/Users/agasson/Dev/clj/oncall/resources/templates/" (22306 52206 0 0) "sent.html" "oncall.mustache" "home.html" "error.html" "base.html" "about.html" "../" "./")
+
+ ("/Users/agasson/Dev/clj/oncall/src/clj/oncall/" (22306 50968 0 0) "routes/" "middleware.clj" "layout.clj" "handler.clj" "gcal.clj" "email.clj" "core.clj" "config.clj" ".#layout.clj" "#layout.clj#" "../" "./")
+
+ ("/Users/agasson/Dev/clj/oncall/src/clj/oncall/routes/" (22306 52440 0 0) "home.clj" ".#home.clj" "#home.clj#" "../" "./")
+
+ ("/Users/agasson/Dev/clj/oncall/" (22306 32782 0 0) "test/" "target/" "src/" "resources/" "README.md" "project.clj" "profiles.clj" "Procfile" "log/" "env/" ".nrepl-port" ".lein-repl-history" ".lein-env" ".gitignore" "../" "./")
+
+ ("/Users/agasson/Dev/clj/yada/" (22290 63888 0 0) "yada.test/" "tyk-api-dash.png" "test.rest" "test/" "target/" "talks/" "src/" "resources/" "README.md" "project.clj" "manuscript/" "LICENSE" "examples/" "dev/" "console/" ".travis.yml" ".nrepl-port" ".lein-repl-history" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/agasson/Dev/clj/crm-slack/src/clj/crm_slack/db/" (22278 58779 0 0) "core.clj" "../" "./")
+
+ ("/Users/agasson/Dev/clj/crm-slack/resources/templates/" (22278 59113 0 0) "home.html" "error.html" "base.html" "../" "./")
+
+ ("/Users/agasson/Dev/clj/crm-slack/resources/sql/" (22279 448 0 0) "queries.sql" "../" "./")
+
+ ("/Users/agasson/Dev/clj/crm-slack/" (22278 58781 0 0) "test/" "target/" "src/" "resources/" "README.md" "project.clj" "profiles.clj" "Procfile" "log/" "figwheel_server.log" "env/" ".lein-env" ".gitignore" "../" "./")
+
+ ("/Users/agasson/Dev/clj/crm-slack/src/clj/crm_slack/routes/" (22278 58778 0 0) "home.clj" "../" "./")
+
+ ("/Users/agasson/Dev/clj/oncall/env/dev/clj/" (22274 109 0 0) "user.clj" "oncall/" "../" "./")
+
+ ("/Users/agasson/Dev/clj/postserver/" (22276 36131 0 0) "test/" "target/" "src/" "README.md" "project.clj" "LICENSE" "doc/" "CHANGELOG.md" ".lein-repl-history" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/agasson/Dev/clj/crm-slack/env/prod/clj/crm_slack/" (22278 58349 0 0) "env.clj" "../" "./")
+
+ ("/Users/agasson/Dev/clj/crm-slack/src/cljs/crm_slack/" (22276 34581 0 0) "core.cljs" "ajax.cljs" "../" "./")
+
+ ("/Users/agasson/Dev/clj/crm-slack/src/cljs/" (22276 34581 0 0) "crm_slack/" "../" "./")
+
+ ("/Users/agasson/Dev/clj/crm-slack/resources/public/" (22276 34581 0 0) "js/" "img/" "favicon.ico" "css/" "../" "./")
+
+ ("/Users/agasson/Dev/clj/crm-slack/resources/" (22276 34581 0 0) "templates/" "sql/" "public/" "migrations/" "docs/" "../" "./")
+
+ ("/Users/agasson/Dev/clj/crm-slack/env/prod/clj/" (22276 34581 0 0) "crm_slack/" "../" "./")
+
+ ("/Users/agasson/Dev/clj/crm-slack/env/prod/resources/" (22276 34581 0 0) "log4j.properties" "config.edn" "../" "./")
+
+ ("/Users/agasson/Dev/clj/crm-slack/env/prod/" (22276 34581 0 0) "resources/" "cljs/" "clj/" "../" "./")
+
+ ("/Users/agasson/Dev/clj/crm-slack/env/" (22276 34581 0 0) "test/" "prod/" "dev/" "../" "./")
+
+ ("/Users/agasson/Dev/clj/crm-slack/env/dev/" (22276 34581 0 0) "resources/" "cljs/" "clj/" "../" "./")
+
+ ("/Users/agasson/Dev/clj/crm-slack/env/dev/clj/crm_slack/" (22276 34581 0 0) "figwheel.clj" "env.clj" "dev_middleware.clj" "../" "./")
+
+ ("/Users/agasson/Dev/clj/crm-slack/env/dev/clj/" (22276 34581 0 0) "user.clj" "crm_slack/" "../" "./")
+
+ ("/Users/agasson/Dev/clj/yada-test/" (22237 65285 0 0) "target/" "src/" "build.boot" "boot.properties" "../" "./")
+
+ ("/Users/agasson/Dev/clj/postserver/src/" (22192 30261 0 0) "postserver/" ".DS_Store" "../" "./")
+
+ ("/Users/agasson/Dev/clj/rest-media-demo/" (22192 30278 0 0) "test/" "target/" "src/" "resources/" "README.md" "project.clj" ".gitignore" ".DS_Store" "../" "./")
+
+ ("/Users/agasson/Dev/clj/gae-app/" (22239 41447 0 0) "target/" "src/" "project.clj" "dev/" ".lein-repl-history" ".gitignore" "../" "./")
+
+ ("/Users/agasson/Dev/clj/clj-slack-client/" (22196 7793 0 0) "test-api-token.txt" "test/" "target/" "src/" "README.md" "project.clj" "LICENSE" "doc/" "build.boot" "boot.properties" ".lein-repl-history" ".lein-failures" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/agasson/Dev/clj/crm-slack/src/clj/crm_slack/" (22276 34581 0 0) "routes/" "middleware.clj" "layout.clj" "handler.clj" "db/" "core.clj" "config.clj" "../" "./")
+
+ ("/Users/agasson/Dev/clj/crm-slack/src/clj/" (22276 34581 0 0) "crm_slack/" "../" "./")
+
+ ("/Users/agasson/Dev/clj/crm-slack/src/cljc/crm_slack/" (22276 34581 0 0) "validation.cljc" "../" "./")
+
+ ("/Users/agasson/Dev/clj/crm-slack/src/cljc/" (22276 34581 0 0) "crm_slack/" "../" "./")
+
+ ("/Users/agasson/Dev/clj/crm-slack/src/" (22276 34581 0 0) "cljs/" "cljc/" "clj/" "../" "./")
+
+ ("/Users/agasson/Dev/clj/oncall/resources/" (22267 35433 0 0) "templates/" "public/" "docs/" "../" "./")
+
+ ("/Users/agasson/Dev/clj/oncall/src/clj/" (22273 59486 0 0) "oncall/" "../" "./")
+
+ ("/Users/agasson/Dev/clj/oncall/env/test/resources/" (22267 35433 0 0) "config.edn" "../" "./")
+
+ ("/Users/agasson/Dev/clj/oncall/env/test/" (22267 35433 0 0) "resources/" "../" "./")
+
+ ("/Users/agasson/Dev/clj/oncall/env/" (22267 35433 0 0) "test/" "prod/" "dev/" "../" "./")
+
+ ("/Users/agasson/Dev/clj/oncall/env/prod/clj/myapp/" (22274 73 0 0) "env.clj" "../" "./")
+
+ ("/Users/agasson/Dev/clj/oncall/env/prod/clj/" (22267 35433 0 0) "myapp/" "../" "./")
+
+ ("/Users/agasson/Dev/clj/oncall/env/prod/" (22267 35433 0 0) "resources/" "clj/" "../" "./")
+
+ ("/Users/agasson/Dev/clj/oncall/env/prod/resources/" (22274 49 0 0) "log4j.properties" "config.edn" "../" "./")
+
+ ("/Users/agasson/Dev/clj/oncall/env/dev/clj/myapp/" (22273 65496 0 0) "env.clj" "dev_middleware.clj" "../" "./")
+
+ ("/Users/agasson/Dev/clj/oncall/env/dev/" (22267 35433 0 0) "resources/" "clj/" "../" "./")
+
+ ("/Users/agasson/Dev/clj/oncall/env/dev/resources/" (22273 65427 0 0) "log4j.properties" "config.edn" "../" "./")
+
+ ("/Users/agasson/Dev/clj/oncall/test/clj/myapp/test/" (22267 35433 0 0) "handler.clj" "../" "./")
+
+ ("/Users/agasson/Dev/clj/oncall/test/clj/myapp/" (22267 35433 0 0) "test/" "../" "./")
+
+ ("/Users/agasson/Dev/clj/oncall/test/clj/" (22267 35433 0 0) "myapp/" "../" "./")
+
+ ("/Users/agasson/Dev/clj/oncall/test/" (22267 35433 0 0) "clj/" "../" "./")
+
+ ("/Users/agasson/Dev/clj/atea-oncall/resources/public/templates/" (22269 47672 0 0) "issue.mustache" "../" "./")
+
+ ("/Users/agasson/Dev/clj/oncall/src/clj/myapp/routes/" (22269 50406 0 0) "home.clj" "../" "./")
+
+ ("/Users/agasson/Dev/clj/oncall/src/clj/myapp/" (22273 59384 0 0) "routes/" "middleware.clj" "layout.clj" "handler.clj" "gcal.clj" "email.clj" "core.clj" "config.clj" "../" "./")
+
+ ("/Users/agasson/Dev/clj/oncall/src/" (22267 35433 0 0) "clj/" "../" "./")
+
+ ("/Users/agasson/Dev/clj/myapp/resources/templates/" (22269 47661 0 0) "oncall.mustache" "home.html" "error.html" "base.html" "about.html" "../" "./")
+
+ ("/Users/agasson/Dev/clj/myapp/" (22269 52367 0 0) "test/" "target/" "src/" "resources/" "README.md" "project.clj" "profiles.clj" "Procfile" "log/" "env/" ".nrepl-port" ".lein-repl-history" ".lein-env" ".gitignore" "../" "./")
+
+ ("/Users/agasson/Dev/clj/myapp/src/clj/myapp/" (22269 52255 0 0) "routes/" "middleware.clj" "layout.clj" "handler.clj" "gcal.clj" "email.clj" "core.clj" "config.clj" ".#email.clj" "#email.clj#" "../" "./")
+
+ ("/Users/agasson/Dev/clj/myapp/src/clj/myapp/routes/" (22269 50406 0 0) "home.clj" "../" "./")
+
+ ("/Users/agasson/Dev/clj/atea-oncall/resources/public/" (22259 5776 0 0) "templates/" "js/" "img/" "css/" "../" "./")
+
+ ("/Users/agasson/Dev/clj/atea-oncall/src/atea_oncall/views/" (22268 44674 0 0) "layout.clj" "../" "./")
+
+ ("/Users/agasson/Dev/clj/atea-oncall/src/atea_oncall/routes/" (22268 44672 0 0) "home.clj" "../" "./")
+
+ ("/Users/agasson/Dev/devops/ansible/roles/atea-TSPbase/test/integration/default/serverspec/" (22214 25232 0 0) "secret_keys_spec.rb" "default_spec.rb" "../" "./")
+
+ ("/Users/agasson/Dev/clj/atea-oncall/" (22267 43112 0 0) "test/" "target/" "src/" "resources/" "README.md" "project.clj" "oauth-setup.php" "config.edn" ".lein-repl-history" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/agasson/Dev/clj/myapp/env/prod/resources/" (22267 43874 0 0) "log4j.properties" "config.edn" "../" "./")
+
+ ("/Users/agasson/Dev/clj/myapp/env/dev/resources/" (22267 43870 0 0) "log4j.properties" "config.edn" "../" "./")
+
+ ("/Users/agasson/Dev/clj/atea-oncall/src/atea_oncall/" (22267 28011 0 0) "www.clj" "views/" "routes/" "repl.clj" "models/" "handler.clj" "gcal.clj" "config.clj" "app.clj" "../" "./")
+
+ ("/Users/agasson/Dev/clj/myapp/env/dev/clj/" (22267 35433 0 0) "user.clj" "myapp/" "../" "./")
+
+ ("/Users/agasson/Dev/clj/myapp/env/dev/" (22267 35433 0 0) "resources/" "clj/" "../" "./")
+
+ ("/Users/agasson/Dev/clj/myapp/env/prod/clj/myapp/" (22267 35433 0 0) "env.clj" "../" "./")
+
+ ("/Users/agasson/Dev/clj/myapp/env/prod/clj/" (22267 35433 0 0) "myapp/" "../" "./")
+
+ ("/Users/agasson/Dev/clj/myapp/env/prod/" (22267 35433 0 0) "resources/" "clj/" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
